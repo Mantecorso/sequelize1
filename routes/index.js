@@ -8,8 +8,9 @@ router.get('/', function(req, res, next) {
 
    
     PuestoModel.sync({force: true}).then(()=> {
-      //
+      //sincroniza la tabla, la borra y la creas de nuevo
       return PuestoModel.create({
+        // y con el return me anyades el siguiente dato
         job: 'Prueba'
       })
     })
