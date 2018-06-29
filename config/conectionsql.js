@@ -4,7 +4,7 @@ const sequelize = new Sequelize('luisdos', 'root', 'iker5nerea13', {
     host: 'localhost',
     dialect: 'mysql',
     operatorsAliases: false,
-    port: 5000,
+    
     pool: {
         max: 5,
         min: 0,
@@ -14,4 +14,4 @@ const sequelize = new Sequelize('luisdos', 'root', 'iker5nerea13', {
 });
 
 
-module.export = sequelize;
+module.exports = sequelize;
